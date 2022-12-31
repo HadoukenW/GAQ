@@ -17,6 +17,7 @@ body {
   gap: 100px;
   height: 100vh;
   position: relative;
+  overflow-y: auto;
 }
 @media (max-width: 1500px) {
   .hero__wrapper {
@@ -239,6 +240,7 @@ body {
   max-width: 1235px;
   padding: 40px 15px 30px 15px;
   margin: 0 auto;
+  overflow-y: auto;
 }
 
 .progress {
