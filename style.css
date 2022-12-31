@@ -929,6 +929,20 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  
+  @media (max-width: 767px) {
+  .radio__item2 {
+    max-width: none;
+    flex: 0 1 48%;
+  }
+}
+  
+  @media (max-width: 650px) {
+  .radio__item2 {
+    flex: 0 1 100%;
+  }
+}
+  
 }
 .radio__item2.active {
   border: 1px solid #EB3D35;
