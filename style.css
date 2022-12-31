@@ -824,6 +824,12 @@ body {
   }
 }
 
+@media (max-width: 767px) {
+  .tell-us__textarea {
+    min-height: 380px;
+  }
+}
+
 .tell-us__img {
   position: absolute;
   top: 50%;
