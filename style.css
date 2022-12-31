@@ -209,7 +209,7 @@ body {
   bottom: 0;
   background-color: rgba(10, 10, 10, 0.231372549);
   display: none;
-  overflowY: auto;
+  overflow-y: auto;
 }
 .createdEl.active {
   display: block;
