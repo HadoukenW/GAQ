@@ -485,9 +485,6 @@ body {
   }
 }
 @media (max-width: 767px) {
-  .radio__item {
-    flex: 0 1 100%;
-  }
 }
 .radio__item.active {
   border: 1px solid #EB3D35;
