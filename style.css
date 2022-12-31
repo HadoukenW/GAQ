@@ -482,10 +482,11 @@ body {
 @media (max-width: 992px) {
   .radio__item {
     padding: 10px;
+    max-width: 480px;
   }
 }
 @media (max-width: 767px) {
-  max-width: 480px;
+  
 }
 .radio__item.active {
   border: 1px solid #EB3D35;
