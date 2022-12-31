@@ -2,11 +2,13 @@ const btn = document.querySelector('.right-side__btn')
 const heroWrapper = document.querySelector('.hero__wrapper')
 const createdEl = document.querySelector('.createdEl')
 const body = document.querySelector('body')
+const html = document.quertSelector('html')
 window.addEventListener('click', e => {
 
     if (e.target.matches('.right-side__btn')) {
         e.preventDefault()
         createdEl.classList.add('active')
+        html.classList.add('active')
     }
 
     
@@ -26,7 +28,7 @@ const formClose = document.querySelector('.form__close')
 
 formClose.addEventListener('click', e => {
     createdEl.classList.remove('active')
-
+    html.classList.remove('active')
     
 })
 
