@@ -224,12 +224,6 @@ body {
   transform: translate(-50%, -50%);
   overflow-y: auto;
 }
-@media (max-width: 992px) {
-  .form__wrapper {
-    width: 80%;
-    height: 80%;
-  }
-}
 
 .form__close {
   position: absolute;
