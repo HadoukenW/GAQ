@@ -1,6 +1,3 @@
-html.active {
-  overflow-y: hidden;
-}
 * {
   margin: 0;
   padding: 0;
@@ -228,6 +225,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   overflow-y: auto;
+}
+
+@media (max-width: 767px) {
+  .form__wrapper {
+    width: 80%;
+    height: 80%;
+  }
 }
 
 .form__close {
