@@ -8,7 +8,6 @@ window.addEventListener('click', e => {
     if (e.target.matches('.right-side__btn')) {
         e.preventDefault()
         createdEl.classList.add('active')
-        body.classList.add('active')
     }
 
     
@@ -28,7 +27,6 @@ const formClose = document.querySelector('.form__close')
 
 formClose.addEventListener('click', e => {
     createdEl.classList.remove('active')
-    body.classList.remove('active')
     
 })
 
