@@ -2,13 +2,13 @@ const btn = document.querySelector('.right-side__btn')
 const heroWrapper = document.querySelector('.hero__wrapper')
 const createdEl = document.querySelector('.createdEl')
 const body = document.querySelector('body')
-const html = document.querySelector('html')
+
 window.addEventListener('click', e => {
 
     if (e.target.matches('.right-side__btn')) {
         e.preventDefault()
         createdEl.classList.add('active')
-        html.classList.add('active')
+        body.classList.add('active')
     }
 
     
@@ -19,6 +19,7 @@ window.addEventListener('click', e => {
     //     body.addEventListener('click', el => {
     //         if (!el.target.classList.contains('form__wrapper')) {
     //             createdEl.classList.remove('active')
+                    body.classList.remove('active')
     //         }
     //     })
     // }
@@ -28,7 +29,7 @@ const formClose = document.querySelector('.form__close')
 
 formClose.addEventListener('click', e => {
     createdEl.classList.remove('active')
-    html.classList.remove('active')
+    body.classList.remove('active')
     
 })
 
