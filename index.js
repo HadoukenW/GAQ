@@ -123,17 +123,19 @@ const progressLine = document.querySelector('.progress__line')
 const progressLineWhiteOne = document.querySelector('.progress__line-whiteOne')
 const Circles = document.querySelectorAll('.form__item-circle')
 const stepFinish = document.querySelector('.stepFinish')
+let formWrapper = document.querySelector('.form__wrapper')
 let counter = 0
 
 nextBtn.addEventListener('click', e => {
     counter++
-    
+    formWrapper.scrollTop = '0px'
     updateFormSteps() 
 })
 
 previousBtn.addEventListener('click', e => {
     counter--
     Circles[counter + 1].classList.remove('active__circle')
+    formWrapper.scrollTop = '0px'
     updateFormSteps()
 })
 
