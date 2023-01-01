@@ -1,6 +1,10 @@
-body.active {
-  overflow: hidden;
+
+@media (max-width: 992px) {
+  body.active {
+    overflow-y: hidden;
+  }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,6 @@ body {
   gap: 100px;
   height: 100vh;
   position: relative;
-  overflow-y: auto;
 }
 @media (max-width: 1500px) {
   .hero__wrapper {
@@ -213,7 +216,6 @@ body {
   bottom: 0;
   background-color: rgba(10, 10, 10, 0.231372549);
   display: none;
-  overflow-y: auto;
 }
 .createdEl.active {
   display: block;
@@ -227,7 +229,13 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow-y: auto;
+ 
+}
+
+@media (max-width: 992px) {
+  .form__wrapper {
+    overflow-y: scroll;
+  }
 }
 
 @media (max-width: 767px) {
@@ -250,7 +258,6 @@ body {
   max-width: 1235px;
   padding: 40px 15px 30px 15px;
   margin: 0 auto;
-  overflow-y: auto;
 }
 
 .progress {
