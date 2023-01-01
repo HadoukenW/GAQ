@@ -129,6 +129,7 @@ let counter = 0
 nextBtn.addEventListener('click', e => {
     counter++
     formWrapper.scrollTop = '0px'
+    body.scrollTop = '0px'
     updateFormSteps() 
 })
 
@@ -136,6 +137,7 @@ previousBtn.addEventListener('click', e => {
     counter--
     Circles[counter + 1].classList.remove('active__circle')
     formWrapper.scrollTop = '0px'
+    body.scrollTop = '0px'
     updateFormSteps()
 })
 
