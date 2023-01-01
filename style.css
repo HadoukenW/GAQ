@@ -235,12 +235,6 @@ body {
   }
 }
 
-@media (max-width: 350px) {
-  .form__wrapper {
-    width: 98%;
-    height: 98%;
-  }
-}
 
 .form__close {
   position: absolute;
