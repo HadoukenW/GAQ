@@ -19,7 +19,6 @@ window.addEventListener('click', e => {
     //     body.addEventListener('click', el => {
     //         if (!el.target.classList.contains('form__wrapper')) {
     //             createdEl.classList.remove('active')
-                    body.classList.remove('active')
     //         }
     //     })
     // }
