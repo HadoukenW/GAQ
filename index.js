@@ -2,13 +2,13 @@ const btn = document.querySelector('.right-side__btn')
 const heroWrapper = document.querySelector('.hero__wrapper')
 const createdEl = document.querySelector('.createdEl')
 const body = document.querySelector('body')
-
+let containneer = document.querySelector('.container')
 window.addEventListener('click', e => {
 
     if (e.target.matches('.right-side__btn')) {
         e.preventDefault()
         createdEl.classList.add('active')
-        body.classList.add('active')
+        body.style.height = containneer.clientHeight + 'px'
     }
 
     
@@ -29,6 +29,7 @@ const formClose = document.querySelector('.form__close')
 formClose.addEventListener('click', e => {
     createdEl.classList.remove('active')
     body.classList.remove('active')
+    body.style.height = 'unset'
 })
 
 const formOptionBtn = document.querySelectorAll('.radio__input')
@@ -133,6 +134,11 @@ nextBtn.addEventListener('click', e => {
     formWrapper.scrollTop = '0px'
     body.scrollTop = '0px'
     html.scrollTop = '0px'
+    
+    setTimeout(() => {
+        body.style.height = containneer.clientHeight + 'px'
+    }, 100);
+    
     updateFormSteps() 
 })
 
@@ -142,6 +148,11 @@ previousBtn.addEventListener('click', e => {
     formWrapper.scrollTop = '0px'
     body.scrollTop = '0px'
     html.scrollTop = '0px'
+    
+     setTimeout(() => {
+        body.style.height = containneer.clientHeight + 'px'
+    }, 100);
+    
     updateFormSteps()
 })
 
